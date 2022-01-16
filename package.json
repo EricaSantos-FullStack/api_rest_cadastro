@@ -1,0 +1,30 @@
+{
+  "name": "api_rest_cadastro",
+  "version": "1.0.0",
+  "description": "API REST com Node.JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricaSantos-FullStack/api_rest_cadastro.git"
+  },
+  "keywords": [
+    "API",
+    "Node.js",
+    "Sequelize",
+    "Express",
+    "MySQL",
+    "MariaDB"
+  ],
+  "author": "Erica S. Francisco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EricaSantos-FullStack/api_rest_cadastro/issues"
+  },
+  "homepage": "https://github.com/EricaSantos-FullStack/api_rest_cadastro#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
