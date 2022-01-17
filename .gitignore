@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+#pra não mostrar a senha do seu banco de dados no github
+.vscode
