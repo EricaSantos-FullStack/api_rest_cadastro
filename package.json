@@ -26,8 +26,11 @@
   },
   "homepage": "https://github.com/EricaSantos-FullStack/api_rest_cadastro#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
     "express": "^4.17.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

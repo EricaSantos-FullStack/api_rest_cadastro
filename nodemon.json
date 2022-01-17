@@ -1,0 +1,9 @@
+{
+    "env" : {
+        "MYSQL_USER" : "root",
+        "MYSQL_PASSWORD" : null,
+        "MYSQL_DATABASE" : "api_cadastro",
+        "MYSQL_MYSQL_HOST" : "localhost",
+        "MYSQL_MYSQL_PORT" : 3306
+    }
+}
