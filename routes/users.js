@@ -52,25 +52,19 @@ router.post('/login', (req, res, next) => {
                     return res.status(401).send({ mensagem: 'Falha na altentificação'})
                 }
 
-                bcrypt.compare(req.body.senha, results[0].senha, (error, results) => {
-                    if (error){
+                bcrypt.compare(req.body.senha, results[0].senha, (error, result) => {
+                    if (err){
                         return res.status(401).send({ mensagem: 'Falha na altentificação'})
                     }
-                    if (results){
+                    if (result) {
                         const token = jwt.sign({
                             id_user: results[0].id_user,
-                            email: results[0].email
-                        }, 
-                        process.env.JWT_KEY, 
-                        {
-                            expiresIn: "1h" //depois de uma hora o user terá que refazer o login
-                        });
-
-                        return res.status(200).send({ 
-                            mensagem: 'Autenticado com sucesso',
-                            token: token
-                        });
+                            email: result[0].email
+                        },
+                        process.env.JWT_KEY,
+                        )
                     }
+                  
                     return res.status(401).send({ mensagem: 'Falha na altentificação'})
                 });
             });
