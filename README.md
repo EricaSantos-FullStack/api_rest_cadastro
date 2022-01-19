@@ -6,5 +6,5 @@ Rota Login e Cadastro com caminho privilegiado com Token do usuario.
 
 Testes realizados com postman.
 
-Em desenvolvimento!
+Em desenvolvimento! [////////----80%]
 
