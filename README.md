@@ -2,7 +2,9 @@
 
 API REST para cadastro de usuários
 
-Login e Cadastro com caminho privilegiado com Token do usuario
+Rota Login e Cadastro com caminho privilegiado com Token do usuario.
+
+Testes realizados com postman.
 
 Em desenvolvimento!
 
