@@ -7,7 +7,7 @@ const login = require('../middleware/login');
 
 
 //CADASTRO DO USUARIO
-router.post('/cadastro', login, (req, res, next) => {
+router.post('/cadastro', (req, res, next) => {
     mysql2.getConnection((error, conn) => {
         if (error) { return res.status(500).send({ error: error }) }
         conn.query('SELECT * FROM user WHERE email = ?', [req.body.email], (error, results) => {
